@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgImg{
+    width: 100%;
+    height: 70vh;
+    background-image: url(/src/assets/bg-shadow.png);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
