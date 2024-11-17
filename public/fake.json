@@ -1,0 +1,92 @@
+[
+    {
+        "playerId": 1,
+        "name": "Litton Das",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/yYWkhdr/licensed-image-q-tbn-ANd9-Gc-Sbs-Go-Y5-C2d-XBctb-Ib-Ix-Fr-Xf-J9l-Cmy-LFh-NEn6k-PW8l-Ezc-J0ep-Fe-B2n.jpg",
+        "role": "Wicketkeeper Batsman",
+        "battingType": "Right-hand bat",
+        "bowlingType": "N/A",
+        "biddingPrice": 1200000
+    },
+    {
+        "playerId": 2,
+        "name": "Mahmudullah",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/3m5rWK4/Mahmudullah-1.jpg",
+        "role": "All-rounder",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm offbreak",
+        "biddingPrice": 1000000
+    },
+    {
+        "playerId": 3,
+        "name": "Mustafizur Rahman",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/zQzzXgN/383539.jpg",
+        "role": "Bowler",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Left-arm fast-medium",
+        "biddingPrice": 1500000
+    },
+    {
+        "playerId": 4,
+        "name": "Najmul Hossain Shanto",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/yqzgYsS/1725214619-ba63f95b78d5994886fe2cefc448fbaa.jpg",
+        "role": "Batsman",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Right-arm offbreak",
+        "biddingPrice": 1100000
+    },
+    {
+        "playerId": 5,
+        "name": "Rishad Hossain",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/PxVpkmD/1017.png",
+        "role": "Bowler",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Legbreak googly",
+        "biddingPrice": 800000
+    },
+    {
+        "playerId": 6,
+        "name": "Shoriful Islam",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/mXqxnbR/licensed-image-q-tbn-ANd9-Gc-Tsh9at-Hv-RIu8-Lb-YZi-Tg8-wx-NV9-V0gp-P8-Zlulz-WC6-K4-NKevmh-Pkw4ccj-Cr.jpg",
+        "role": "Bowler",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Left-arm fast-medium",
+        "biddingPrice": 1300000
+    },
+    {
+        "playerId": 7,
+        "name": "Soumya Sarkar",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/VQnPKch/licensed-image-q-tbn-ANd9-Gc-Q-27bapz-MHg4n9kd-PSAx2bbpx-A2y0-RKD3-BIZjtqi-GY-YWx-ELNro2z-j-S1e-Vx-o.jpg",
+        "role": "All-rounder",
+        "battingType": "Left-hand bat",
+        "bowlingType": "Right-arm medium-fast",
+        "biddingPrice": 900000
+    },
+    {
+        "playerId": 8,
+        "name": "Tanzid Hasan",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/kXg62wW/i-am-really-enjoying-my-bowling-at-the-moment-shoriful.jpg",
+        "role": "Batsman",
+        "battingType": "Left-hand bat",
+        "bowlingType": "N/A",
+        "biddingPrice": 750000
+    },
+    {
+        "playerId": 9,
+        "name": "Taskin Ahmed",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/vmjxBdH/licensed-image-q-tbn-ANd9-Gc-RNYEGa-RLmhd-RQ7clp01s3v8x9-QRF13-LEVz-ACW6s4-HL4-OMCx9-E17-C0xe-C-8e-D.jpg",
+        "role": "Bowler",
+        "battingType": "Right-hand bat",
+        "bowlingType": "Right-arm fast-medium",
+        "biddingPrice": 1400000
+    }
+]

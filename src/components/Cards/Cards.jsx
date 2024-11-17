@@ -7,6 +7,9 @@ const Cards = () => {
                 <button>Available</button>
                 <button>Selected</button>
             </div>
+            {
+                
+            }
         </div>
     );
 };
