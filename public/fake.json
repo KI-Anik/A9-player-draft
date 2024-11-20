@@ -69,16 +69,7 @@
         "bowlingType": "Right-arm medium-fast",
         "biddingPrice": 900000
     },
-    {
-        "playerId": 8,
-        "name": "Tanzid Hasan",
-        "country": "Bangladesh",
-        "image": "https://i.ibb.co.com/kXg62wW/i-am-really-enjoying-my-bowling-at-the-moment-shoriful.jpg",
-        "role": "Batsman",
-        "battingType": "Left-hand bat",
-        "bowlingType": "N/A",
-        "biddingPrice": 750000
-    },
+    
     {
         "playerId": 9,
         "name": "Taskin Ahmed",
