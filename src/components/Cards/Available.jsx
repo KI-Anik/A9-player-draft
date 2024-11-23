@@ -1,27 +1,34 @@
 import React from 'react';
 
-const Available = ({info,handleSelectedPlayer,selectedPlayers}) => {
+const Available = ({ allPlayers, handleSelectedPlayer,  }) => {
     return (
-        <div className=" rounded-3xl bg-base-100 shadow-xl p-5">
-                        <figure className="">
-                            <img
-                            className='rounded-lg h-[250px] w-full object-cover object-top'
-                                src={info.image}
-                                alt="player image" />
-                        </figure>
-                        <div className="">
-                            <h2 className="card-title">{info.name}</h2>
-                            <p>{info.country}</p>
-                            <p>{info.role }</p>
-                            <hr />
-                            <h4 className="font-bold">Rating</h4>
-                            <p>{info.battingType}</p>
-                            <div className="flex justify-between">
-                                <h4>Price : {info.biddingPrice}</h4>
-                                <button onClick={() => handleSelectedPlayer(info)} className="p-3 rounded-xl bg-gray-400">choose Player</button>
-                            </div>
-                        </div>
+        <div>
+            <h2 className='text-3xl font-bold'>Avaiable Players</h2>
+            <div className="w-11/12 mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
+            {allPlayers.map(player => 
+            <div key={player.playerId} className='rounded-3xl bg-base-100 shadow-xl p-5 space-y-8' >
+
+                    <img
+                        className='rounded-lg h-[250px] w-full object-cover object-top'
+                        src={player.image}
+                        alt="player image" />
+
+                <div className="m-2 space-y-3">
+                    <h2 className="card-title">{player.name}</h2>
+                    <p>{player.country}</p>
+                    <p>{player.role}</p>
+                    <hr />
+                    <h4 className="font-bold">Rating</h4>
+                    <p>{player.battingType}</p>
+                    <div className="flex justify-between">
+                        <p>Price : ${player.biddingPrice}</p>
+                        <button onClick={() => handleSelectedPlayer(player)} className="p-2 md:p-3 btn font-bold">choose Player</button>
                     </div>
+                </div>
+            </div>
+            )}
+</div>
+        </div>
     );
 };
 

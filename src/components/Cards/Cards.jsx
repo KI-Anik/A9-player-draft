@@ -1,19 +1,17 @@
+import { useState } from "react";
 import Available from "./Available";
 
 /* eslint-disable react/prop-types */
-const Cards = ({ allPlayers, handleBtnActive, btnActive, handleSelectedPlayer,selectedPlayers }) => {
+const Cards = ({ handleBtnActive, btnActive,count}) => {
+
     return (
-        <div>
-            <div  className="flex justify-between items-center">
-            <h2 className="text-2xl font-bold">Avaiable player : {allPlayers.length}</h2>
-            <div className="flex gap-4 border p-2 rounded-2xl font-semibold">
+        <div className="flex justify-end">
+            <div className=" gap-4 border p-2 rounded-2xl font-semibold">
                 <button onClick={() =>handleBtnActive(true) } className={`${btnActive.status? 'button bgColor' : 'button'}`}>Available </button>
-                <button onClick={() =>handleBtnActive(false) } className={`${btnActive.status? 'button ' : 'button bgColor'}`} >Selected</button>
+                <button onClick={() =>handleBtnActive(false) } className={`${btnActive.status? 'button ' : 'button bgColor'}`} >Selected ({count})</button>
             </div>
-            </div>
-            <div className="w-11/12 mx-auto grid grid-cols-3 gap-5 mt-8 ">
     
-            {
+            {/* {
                 allPlayers.map(player => <Available key={player.playerId}
                     info={player}
                     handleSelectedPlayer={handleSelectedPlayer}
@@ -21,10 +19,9 @@ const Cards = ({ allPlayers, handleBtnActive, btnActive, handleSelectedPlayer,se
                     ></Available>
                    
                 )
-            }
+            } */}
 
 
-            </div>
         </div>
     );
 };
