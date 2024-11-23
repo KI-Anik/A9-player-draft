@@ -1,42 +1,30 @@
+import Available from "./Available";
 
-const Cards = ({ allPlayers }) => {
+/* eslint-disable react/prop-types */
+const Cards = ({ allPlayers, handleBtnActive, btnActive, handleSelectedPlayer,selectedPlayers }) => {
     return (
         <div>
             <div  className="flex justify-between items-center">
             <h2 className="text-2xl font-bold">Avaiable player : {allPlayers.length}</h2>
-            <div className="flex gap-4 border p-3 rounded-xl font-semibold">
-                <button>Available </button>
-                <button>Selected</button>
+            <div className="flex gap-4 border p-2 rounded-2xl font-semibold">
+                <button onClick={() =>handleBtnActive(true) } className={`${btnActive.status? 'button bgColor' : 'button'}`}>Available </button>
+                <button onClick={() =>handleBtnActive(false) } className={`${btnActive.status? 'button ' : 'button bgColor'}`} >Selected</button>
             </div>
             </div>
             <div className="w-11/12 mx-auto grid grid-cols-3 gap-5 mt-8 ">
-
+    
             {
-                allPlayers.map(player =>
-                    <div key={player.playerId} className=" rounded-3xl bg-base-100 shadow-xl p-5">
-                        <figure className="">
-                            <img
-                            className='rounded-lg'
-                                src={player.image}
-                                alt="player image" />
-                        </figure>
-                        <div className="">
-                            <h2 className="card-title">{player.name}</h2>
-                            <p>{player.country}</p>
-                            <p>{player.role }</p>
-                            <hr />
-                            <h4 className="font-bold">Rating</h4>
-                            <p>{player.battingType}</p>
-                            <div className="flex justify-between">
-                                <h4>Price : {player.biddingPrice}</h4>
-                                <button className=" bg-gray-400">choose Player</button>
-                            </div>
-                        </div>
-                    </div>
+                allPlayers.map(player => <Available key={player.playerId}
+                    info={player}
+                    handleSelectedPlayer={handleSelectedPlayer}
+                    selectedPlayers={selectedPlayers}
+                    ></Available>
+                   
                 )
             }
-            </div>
 
+
+            </div>
         </div>
     );
 };

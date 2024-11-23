@@ -20,6 +20,11 @@ body {
   border-radius: 20px;
 }
 
-.image{
-  width: ;
+.bgColor{
+  background-color: green;
+  color: white;
+}
+.button{
+  padding: 15px;
+  border-radius: 15px;
 }
