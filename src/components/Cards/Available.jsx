@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Available = ({ allPlayers, handleSelectedPlayer, }) => {
     return (
@@ -14,8 +13,8 @@ const Available = ({ allPlayers, handleSelectedPlayer, }) => {
                             alt="player image" />
 
                         <div className="m-2 space-y-3">
-                            <h2 className="card-title">{player.name}</h2>
-                            <p>{player.country}</p>
+                            <h2 className="card-title"><i className="fa-solid fa-user mx-1"></i>{player.name}</h2>
+                            <p><i className="fa-solid fa-flag mx-1"></i> {player.country}</p>
                             <p>{player.role}</p>
                             <hr />
                             <h4 className="font-bold">Rating</h4>

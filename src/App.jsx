@@ -12,6 +12,7 @@ function App() {
   const [selectedPlayers, setSelectedPlayers] = useState([])
   const [count, setCount] = useState(0)
   const [price, setPrice] = useState(0)
+  const [addMore, setAddMore] = useState([])
 
   useEffect(() => {
     fetch('/fake.json')
@@ -29,7 +30,7 @@ function App() {
     }
   }
 
-  const handleIncreasePrice = (pr) => {
+  const handleDecreasePrice = (pr) => {
     setPrice(price - pr)
   }
 
@@ -40,7 +41,7 @@ function App() {
   const handleSelectedPlayer = (player) => {
     const isExits = selectedPlayers.find(p => player.playerId == p.playerId)
     
-    if (price < player.biddingPrice) {
+    if (price <= player.biddingPrice) {
       alert('dont enough coin')
       return
     }
@@ -53,7 +54,7 @@ function App() {
     if (selectedPlayers.length <= 5) {
       setSelectedPlayers([...selectedPlayers, player])
       setCount(count + 1)
-      handleIncreasePrice(player.biddingPrice)
+      handleDecreasePrice(player.biddingPrice)
     }
     else {
       alert("You can't select more than 6")
@@ -66,6 +67,9 @@ function App() {
     const remainingPlayer = selectedPlayers.filter(p => p.playerId != id.playerId)
     setSelectedPlayers(remainingPlayer)
     setCount(count - 1)
+  }
+
+  const handleAddMore = () => {
   }
   return (
     <>
@@ -85,6 +89,7 @@ function App() {
             (<Selected
               selectedPlayers={selectedPlayers}
               handleDelete={handleDelete}
+              handleAddMore={handleAddMore}
             ></Selected>)
         }
 

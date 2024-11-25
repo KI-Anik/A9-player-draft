@@ -47,7 +47,7 @@
         "role": "Bowler",
         "battingType": "Right-hand bat",
         "bowlingType": "Legbreak googly",
-        "biddingPrice": 8000
+        "biddingPrice": 1800
     },
     {
         "playerId": 6,
@@ -67,7 +67,7 @@
         "role": "All-rounder",
         "battingType": "Left-hand bat",
         "bowlingType": "Right-arm medium-fast",
-        "biddingPrice": 9000
+        "biddingPrice": 1900
     },
     
     {

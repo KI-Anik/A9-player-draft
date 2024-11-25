@@ -10,7 +10,7 @@ const Navbar = ({price}) => {
                 <li>Fixture</li>
                 <li>Team</li>
                 <li>Schedule</li>
-                <button className='btn border-2 px-5 py-2 rounded-xl '>{price} Coin</button>
+                <button className='btn border-2 px-5 py-2 rounded-xl '>{price} Coin <i className="fa-solid fa-coins"></i></button>
             </ul>
         </div>
     );
