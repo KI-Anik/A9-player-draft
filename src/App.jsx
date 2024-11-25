@@ -29,8 +29,14 @@ function App() {
   }
   
   const handleSelectedPlayer = (player) => {
-    setSelectedPlayers([...selectedPlayers, player])
-    setCount(count+1)
+    console.log(selectedPlayers.length)
+    if(selectedPlayers.length <= 5){
+      setSelectedPlayers([...selectedPlayers, player])
+      setCount(count+1)
+    }
+    else{
+      alert("You cna't add more than 6")
+    }
   }
   return (
     <>

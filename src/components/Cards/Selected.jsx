@@ -4,7 +4,7 @@ const Selected = ({ selectedPlayers }) => {
     return (
         <div>
 
-            <h2 className='text-3xl font-bold'> Selected Players: {selectedPlayers.length}</h2>
+            <h2 className='text-3xl font-bold'> Selected Players: {selectedPlayers.length} / 6</h2>
 
             {selectedPlayers.map(p => <div
                 key={p.playerId}
