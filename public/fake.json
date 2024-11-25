@@ -7,7 +7,7 @@
         "role": "Wicketkeeper Batsman",
         "battingType": "Right-hand bat",
         "bowlingType": "N/A",
-        "biddingPrice": 1200000
+        "biddingPrice": 1200
     },
     {
         "playerId": 2,
@@ -17,7 +17,7 @@
         "role": "All-rounder",
         "battingType": "Right-hand bat",
         "bowlingType": "Right-arm offbreak",
-        "biddingPrice": 1000000
+        "biddingPrice": 1000
     },
     {
         "playerId": 3,
@@ -27,7 +27,7 @@
         "role": "Bowler",
         "battingType": "Left-hand bat",
         "bowlingType": "Left-arm fast-medium",
-        "biddingPrice": 1500000
+        "biddingPrice": 1500
     },
     {
         "playerId": 4,
@@ -37,7 +37,7 @@
         "role": "Batsman",
         "battingType": "Left-hand bat",
         "bowlingType": "Right-arm offbreak",
-        "biddingPrice": 1100000
+        "biddingPrice": 1100
     },
     {
         "playerId": 5,
@@ -47,7 +47,7 @@
         "role": "Bowler",
         "battingType": "Right-hand bat",
         "bowlingType": "Legbreak googly",
-        "biddingPrice": 800000
+        "biddingPrice": 8000
     },
     {
         "playerId": 6,
@@ -57,7 +57,7 @@
         "role": "Bowler",
         "battingType": "Right-hand bat",
         "bowlingType": "Left-arm fast-medium",
-        "biddingPrice": 1300000
+        "biddingPrice": 1300
     },
     {
         "playerId": 7,
@@ -67,17 +67,17 @@
         "role": "All-rounder",
         "battingType": "Left-hand bat",
         "bowlingType": "Right-arm medium-fast",
-        "biddingPrice": 900000
+        "biddingPrice": 9000
     },
     
     {
-        "playerId": 9,
+        "playerId": 8,
         "name": "Taskin Ahmed",
         "country": "Bangladesh",
         "image": "https://i.ibb.co.com/vmjxBdH/licensed-image-q-tbn-ANd9-Gc-RNYEGa-RLmhd-RQ7clp01s3v8x9-QRF13-LEVz-ACW6s4-HL4-OMCx9-E17-C0xe-C-8e-D.jpg",
         "role": "Bowler",
         "battingType": "Right-hand bat",
         "bowlingType": "Right-arm fast-medium",
-        "biddingPrice": 1400000
+        "biddingPrice": 1400
     }
 ]

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Selected = ({ selectedPlayers }) => {
+const Selected = ({ selectedPlayers, handleDelete }) => {
     return (
         <div>
 
@@ -19,7 +19,7 @@ const Selected = ({ selectedPlayers }) => {
                 </div>
 
                 <p className=''> ${p.biddingPrice}</p>
-                <button>Delete</button>
+                <button onClick={()=>handleDelete(p)}>Delete</button>
             </div>)}
             <button className='btn mt-8'>Add More</button>
         </div>

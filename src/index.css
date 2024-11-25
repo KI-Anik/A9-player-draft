@@ -31,3 +31,6 @@ body {
 p{
 color: rgb(105, 101, 101);
 }
+.bg-blur{
+  backdrop-filter: blur(10px);
+}
