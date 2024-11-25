@@ -14,6 +14,7 @@ function App() {
   const [selectedPlayers, setSelectedPlayers] = useState([])
   const [count, setCount] = useState(0)
   const [price, setPrice] = useState(0)
+  // eslint-disable-next-line no-unused-vars
   const [addMore, setAddMore] = useState({status: true})
 
   useEffect(() => {
@@ -78,8 +79,8 @@ function App() {
   }
   return (
     <>
-      <div className="container mx-auto mt-4 space-y-12">
-        <Navbar className='' price={price}></Navbar>
+      <div className="w-4/5 mx-auto mt-4 space-y-12">
+        <Navbar price={price}></Navbar>
         <Banner handleFreeCredit={handleFreeCredit}></Banner>
         <Cards
           handleBtnActive={handleBtnActive}

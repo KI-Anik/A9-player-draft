@@ -1,9 +1,9 @@
 
 const Footer = () => {
     return (
-        <div className="bg-black p-4">
+        <div className="bg-black p-4 pt-44 mx-[-200px]">
             <img className="mx-auto" src="/src/assets/logo-footer.png" alt="" />
-            <footer className="footer justify-between  p-10 text-white">
+            <footer className="footer justify-between p-8 container mx-auto text-white">
                 <nav>
                     <h6 className="footer-title">About Us</h6>
                     <p>We are a passionate team <br /> dedicated to providing the best <br /> services to our customers.</p>

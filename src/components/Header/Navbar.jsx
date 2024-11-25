@@ -3,7 +3,7 @@
 const Navbar = ({price}) => {
     return (
 
-        <div className='flex justify-between items-center bg-blur sticky top-0  p-5 rounded-md'>
+        <div className='flex justify-between items-center bg-blur sticky top-0 z-10 p-5 rounded-md'>
             <img className='' src="/src/assets/logo.png" alt="" />
             <ul className='flex items-center gap-6 font-bold'>
                 <li>Home</li>

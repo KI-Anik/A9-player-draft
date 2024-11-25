@@ -19,7 +19,7 @@ const Selected = ({ selectedPlayers, handleDelete, handleAddMore, }) => {
                 </div>
 
                 <p> ${p.biddingPrice}</p>
-                <button onClick={()=>handleDelete(p)}>Delete</button>
+                <button onClick={()=>handleDelete(p)}><i className="fa-solid fa-trash-can"></i></button>
             </div>)}
             <button onClick={()=> handleAddMore(true)} className='btn mt-8'>Add More</button>
         </div>
