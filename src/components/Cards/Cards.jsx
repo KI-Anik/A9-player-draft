@@ -1,6 +1,3 @@
-import { useState } from "react";
-import Available from "./Available";
-
 /* eslint-disable react/prop-types */
 const Cards = ({ handleBtnActive, btnActive,count}) => {
 
@@ -10,18 +7,6 @@ const Cards = ({ handleBtnActive, btnActive,count}) => {
                 <button onClick={() =>handleBtnActive(true) } className={`${btnActive.status? 'button bgColor' : 'button'}`}>Available </button>
                 <button onClick={() =>handleBtnActive(false) } className={`${btnActive.status? 'button ' : 'button bgColor'}`} >Selected ({count})</button>
             </div>
-    
-            {/* {
-                allPlayers.map(player => <Available key={player.playerId}
-                    info={player}
-                    handleSelectedPlayer={handleSelectedPlayer}
-                    selectedPlayers={selectedPlayers}
-                    ></Available>
-                   
-                )
-            } */}
-
-
         </div>
     );
 };
