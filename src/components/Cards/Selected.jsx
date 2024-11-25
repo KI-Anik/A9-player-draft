@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-const Selected = ({ selectedPlayers, handleDelete, handleAddMore }) => {
+const Selected = ({ selectedPlayers, handleDelete, handleAddMore, }) => {
     return (
         <div>
 
@@ -21,7 +21,7 @@ const Selected = ({ selectedPlayers, handleDelete, handleAddMore }) => {
                 <p> ${p.biddingPrice}</p>
                 <button onClick={()=>handleDelete(p)}>Delete</button>
             </div>)}
-            <button onClick={()=> handleAddMore()} className='btn mt-8'>Add More</button>
+            <button onClick={()=> handleAddMore(true)} className='btn mt-8'>Add More</button>
         </div>
     );
 };

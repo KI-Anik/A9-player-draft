@@ -6,13 +6,15 @@ import Navbar from "./components/Header/Navbar"
 import Selected from "./components/Cards/Selected"
 import Available from "./components/Cards/Available"
 
+
+
 function App() {
   const [allPlayers, setAllPlayers] = useState([])
-  const [btnActive, setBtnActive] = useState({ status: true })
+  const [btnActive, setBtnActive] = useState({status: true})
   const [selectedPlayers, setSelectedPlayers] = useState([])
   const [count, setCount] = useState(0)
   const [price, setPrice] = useState(0)
-  const [addMore, setAddMore] = useState([])
+  const [addMore, setAddMore] = useState({status: true})
 
   useEffect(() => {
     fetch('/fake.json')
@@ -24,9 +26,11 @@ function App() {
   const handleBtnActive = (status) => {
     if (status) {
       setBtnActive({ status: true })
+      setAddMore({status: true})
     }
     else {
       setBtnActive({ status: false })
+      setAddMore({status: false})
     }
   }
 
@@ -69,7 +73,8 @@ function App() {
     setCount(count - 1)
   }
 
-  const handleAddMore = () => {
+  const handleAddMore = (props) => {
+    handleBtnActive(props)
   }
   return (
     <>
@@ -92,7 +97,6 @@ function App() {
               handleAddMore={handleAddMore}
             ></Selected>)
         }
-
         <Footer></Footer>
       </div>
     </>
