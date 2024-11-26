@@ -1,8 +1,21 @@
-# React + Vite
+# Player Draft
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and interactive 'Player Draft' clone built for sports enthusiasts to create their fantasy teams, track player stats, and compete with friends. Designed with a clean interface and smooth user experience.
 
-Currently, two official plugins are available:
+## 🌟 Features
+1. **Create and Manage Fantasy Teams**  
+   Build your dream team by selecting players based on real-time stats and budgets.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. **Dynamic Player Statistics**  
+   View and compare players' performances with updated stats and detailed analytics.
+
+3. **Interactive Leaderboards**  
+   Compete with other users and track your rank on a dynamic leaderboard.
+
+## 🛠️ Technologies Used
+- **HTML5** for structured content.  
+- **CSS3** for responsive and elegant designs.  
+- **JavaScript** for interactive and dynamic functionalities.  
+
+## 🔗 Project Link 🚀
+[Player Draft live link]( )

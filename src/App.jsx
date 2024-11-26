@@ -5,7 +5,9 @@ import Banner from "./components/Header/Banner"
 import Navbar from "./components/Header/Navbar"
 import Selected from "./components/Cards/Selected"
 import Available from "./components/Cards/Available"
+import { ToastContainer, toast } from 'react-toastify';
 
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -41,33 +43,37 @@ function App() {
 
   const handleFreeCredit = () => {
     setPrice(price + 2000)
+    toast.success('2000 Coin added succefully')
   }
 
   const handleSelectedPlayer = (player) => {
     const isExits = selectedPlayers.find(p => player.playerId == p.playerId)
     
     if (price <= player.biddingPrice) {
-      alert('dont enough coin')
+      toast.error('dont enough coin')
       return
     }
 
     if (isExits) {
-      alert(`${player.name} already selected`)
+      toast.warn(`${player.name} already selected`)
       return
     }
 
     if (selectedPlayers.length <= 5) {
+      toast.info(`${player.name} added to your selected item`)
       setSelectedPlayers([...selectedPlayers, player])
       setCount(count + 1)
       handleDecreasePrice(player.biddingPrice)
     }
     else {
-      alert("You can't select more than 6")
+      toast.error("You can't select more than 6")
     }
 
   }
 
   const handleDelete = (id) => {
+    toast.warning(`${id.name} removed`)
+
     setPrice(price + id.biddingPrice)
     const remainingPlayer = selectedPlayers.filter(p => p.playerId != id.playerId)
     setSelectedPlayers(remainingPlayer)
@@ -98,6 +104,18 @@ function App() {
               handleAddMore={handleAddMore}
             ></Selected>)
         }
+        <ToastContainer 
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        />
         <Footer></Footer>
       </div>
     </>
