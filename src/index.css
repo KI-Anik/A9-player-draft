@@ -36,17 +36,17 @@ body {
   top: -200px;
 }
 
-.bgColor{
+.bgColor {
   background-color: green;
   color: white;
 }
-.button{
+.button {
   padding: 15px;
   border-radius: 15px;
 }
-p{
-color: rgb(105, 101, 101);
+p {
+  color: rgb(105, 101, 101);
 }
-.bg-blur{
+.bg-blur {
   backdrop-filter: blur(15px);
 }

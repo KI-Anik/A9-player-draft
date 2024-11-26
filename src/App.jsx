@@ -12,12 +12,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [allPlayers, setAllPlayers] = useState([])
-  const [btnActive, setBtnActive] = useState({status: true})
+  const [btnActive, setBtnActive] = useState({ status: true })
   const [selectedPlayers, setSelectedPlayers] = useState([])
   const [count, setCount] = useState(0)
   const [price, setPrice] = useState(0)
   // eslint-disable-next-line no-unused-vars
-  const [addMore, setAddMore] = useState({status: true})
+  const [addMore, setAddMore] = useState({ status: true })
 
   useEffect(() => {
     fetch('/fake.json')
@@ -29,11 +29,11 @@ function App() {
   const handleBtnActive = (status) => {
     if (status) {
       setBtnActive({ status: true })
-      setAddMore({status: true})
+      setAddMore({ status: true })
     }
     else {
       setBtnActive({ status: false })
-      setAddMore({status: false})
+      setAddMore({ status: false })
     }
   }
 
@@ -48,7 +48,7 @@ function App() {
 
   const handleSelectedPlayer = (player) => {
     const isExits = selectedPlayers.find(p => player.playerId == p.playerId)
-    
+
     if (price < player.biddingPrice) {
       toast.error("don't have enough coin")
       return
@@ -83,6 +83,7 @@ function App() {
   const handleAddMore = (props) => {
     handleBtnActive(props)
   }
+  
   return (
     <>
       <div className="w-4/5 mx-auto mt-4 space-y-12">
@@ -104,17 +105,17 @@ function App() {
               handleAddMore={handleAddMore}
             ></Selected>)
         }
-        <ToastContainer 
-        position="top-center"
-        autoClose={3000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
+        <ToastContainer
+          position="top-center"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
         />
         <Footer></Footer>
       </div>

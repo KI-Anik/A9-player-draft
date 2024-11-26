@@ -29,20 +29,20 @@ const Available = ({ allPlayers, handleSelectedPlayer, }) => {
                 )}
             </div>
 
-                    {/* Newsletter section */}
+            {/* Newsletter section */}
             <div className="relative ">
-             <form className="bgImg2 border">
-                            <span className="text-3xl font-bold">Subscribe to our newsletter for the latest updates.</span>
-                            <p>Get the latest updates and news right in your inbox!</p>
-                        <div className="join">
-                            <input
-                                type="text"
-                                placeholder="Enter your email"
-                                className="input input-bordered join-item" />
-                            <button className="btn btn-primary join-item">Subscribe</button>
-                        </div>
+                <form className="bgImg2 border">
+                    <span className="text-3xl font-bold">Subscribe to our newsletter for the latest updates.</span>
+                    <p>Get the latest updates and news right in your inbox!</p>
+                    <div className="join">
+                        <input
+                            type="text"
+                            placeholder="Enter your email"
+                            className="input input-bordered join-item" />
+                        <button className="btn btn-primary join-item">Subscribe</button>
+                    </div>
                 </form>
-        </div>
+            </div>
         </div>
     );
 };
