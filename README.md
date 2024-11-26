@@ -18,4 +18,4 @@ A modern and interactive 'Player Draft' clone built for sports enthusiasts to cr
 - **JavaScript** for interactive and dynamic functionalities.  
 
 ## 🔗 Project Link 🚀
-[Player Draft live link]( )
+[Player Draft live link](https://player-draft-a7.surge.sh/ )

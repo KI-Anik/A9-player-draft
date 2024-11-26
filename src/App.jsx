@@ -50,7 +50,7 @@ function App() {
     const isExits = selectedPlayers.find(p => player.playerId == p.playerId)
     
     if (price <= player.biddingPrice) {
-      toast.error('dont enough coin')
+      toast.error("don't have enough coin")
       return
     }
 
