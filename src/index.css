@@ -13,7 +13,7 @@ body {
 .bgImg {
   width: 100%;
   height: 70vh;
-  background-image: url(/src/assets/bg-shadow.png);
+  background-image: url(/assets/bg-shadow.png);
   background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,7 +22,7 @@ body {
 .bgImg2 {
   width: 100%;
   height: 40vh;
-  background-image: url(/src/assets/bg-shadow.png);
+  background-image: url(/assets/bg-shadow.png);
   background-color: white;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import logo from '/src/assets/logo.png';
+import logo from '/assets/logo.png';
 const Navbar = ({price}) => {
     return (
 
