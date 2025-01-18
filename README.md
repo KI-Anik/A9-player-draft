@@ -2,6 +2,11 @@
 
 A modern and interactive 'Player Draft' clone built for sports enthusiasts to create their fantasy teams, track player stats, and compete with friends. Designed with a clean interface and smooth user experience.
 
+## 🔗 Project Link 🚀
+
+[Player Draft live link](https://player-draft-a7.surge.sh/)
+
+
 ## 🌟 Features
 
 1. **Create and Manage Fantasy Teams**  
@@ -19,6 +24,4 @@ A modern and interactive 'Player Draft' clone built for sports enthusiasts to cr
 - **CSS3** for responsive and elegant designs.
 - **JavaScript** for interactive and dynamic functionalities.
 
-## 🔗 Project Link 🚀
 
-[Player Draft live link](https://player-draft-a7.surge.sh/)
